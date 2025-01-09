@@ -1,0 +1,20 @@
+.button-navigation {
+    display: flex;
+    text-decoration: none;
+    color: #484848;
+    gap: 10px;
+    background-color: #ffffff;
+    padding: 24px;
+    font-size: 18px;
+    border-radius: 15px 0 0 15px;
+}
+
+.button-navigation .icon svg{
+    height: 20px;
+    width: 20px;
+}
+
+.button-navigation-active{
+    color: #ffffff;
+    background-color: #1BC681;
+}
