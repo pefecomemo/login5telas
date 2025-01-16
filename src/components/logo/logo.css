@@ -1,5 +1,15 @@
-.logoMeuBanco {
+.logoDiv{
+    width: auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: auto;
+}
+
+.logoMeuBanco a{
     width: 200px;
     height: 43.13px;
-
 }
+
+/* .logoMeuBanco{
+    
+} */

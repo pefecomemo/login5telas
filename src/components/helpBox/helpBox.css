@@ -1,0 +1,37 @@
+.helpBox {
+    display: flex;
+    flex-direction: column;
+    width: 220px;
+    height: 198px;
+    color: #ffffff;
+    background-color: #1BC681;
+    border-radius: 6px;
+    padding: 16px;
+    margin: auto;
+
+}
+
+.helpTitle {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 28.8px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+}
+
+.helpContent {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19.2px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    
+}
+
+.helpButton{
+    color: #ffffff;
+    background-color: #1BC681;
+    margin-bottom: auto;
+}

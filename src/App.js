@@ -2,18 +2,24 @@ import './App.css';
 import Button from './components/button/button';
 import Shortcut from './components/shortcuts/shortcut';
 import Logo from './components/logo/logo';
+import HelpBox from './components/helpBox/helpBox';
+import Alerta from './components/alerta/alerta';
+import Search from './components/search/search';
+import Saudacoes from './components/saudacoes/saudacoes';
+import Cartoes from './components/cartoes/cartoes';
 
 function App() {
   return (
     <main>
       <sidebar className="sidebar">
-
+        <div className="logoDiv">
           <Logo
           className="logoMeuBanco"
           textoAlt="logotipo meubanco"
           logoImagem="/assets/imgs/Property 1=Default.png"
           pageLogo="#"
           />
+        </div>  
 
         <nav className="navigation">
           <Button buttonType="button-navigation button-navigation-active" iconType="painel" text="Painel"/>
@@ -22,14 +28,29 @@ function App() {
           <Button buttonType="button-navigation" iconType="servico" text="Serviços"/>
           <Button buttonType="button-navigation" iconType="configuracoes" text="Configurações"/>
         </nav>
-        <div className="helpBox">
 
+        <div className="helpBox">
+          <HelpBox
+            title="Precisa de ajuda?"
+            content="Fale com um dos nossos especialistas"
+            buttonText ="CONTATAR" />
         </div>
       </sidebar>
 
       <section className='content'>
         <header>
+          <div>
+            <Search/>
+          </div>
+          
+          <div>
+            <Alerta/>
+          </div>
 
+          <div>
+            <Saudacoes name="Tide Cardoso"/>
+          </div>
+          
         </header>
         <div className='shortCuts'>
           <Shortcut number="+23%" numberStyle="lightBg" text="Gasto este mês" money="R$ 3.547,67"/>
@@ -40,7 +61,9 @@ function App() {
         </div>
         
         <div className="painel">
-          
+          <Cartoes 
+            title="Cartões"
+          />
         </div>
 
 
