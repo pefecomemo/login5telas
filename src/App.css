@@ -23,3 +23,8 @@
    flex-direction: column;
    align-items: center;
 }
+
+.painel {
+  display: flex;
+  background-color: white;
+}

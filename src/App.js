@@ -63,6 +63,15 @@ function App() {
         <div className="painel">
           <Cartoes 
             title="Cartões"
+            limiteDisp="Limite Disponível"
+            limiteValor="R$ 3.000,00"
+            ultimaCompra="Última Compra"
+            localCompra="Bazar Mituzi"
+            valorCompra="R$ 300,00" 
+            limiteMesTitle="Limite mensal"
+            limiteMesValue="R$ 300,00"
+            limiteMesTotal="R$ 3000,00"
+            buttonText="MAIS DETALHES"
           />
         </div>
 
