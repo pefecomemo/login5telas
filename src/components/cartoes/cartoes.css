@@ -2,6 +2,9 @@
     background-color: white;
     width: 100%;
     display: flex;
+    padding: 24px 24px 24px 42px;
+    border-radius: 8px;
+    gap: 57px;
 }
 
 .progressionBarBG {
@@ -12,7 +15,6 @@
 }
 
 .progressionBarProg {
-    background-color:red;
     background-color: #1BC681;
     border-radius: 8px;
     width: 10%;

@@ -7,6 +7,7 @@ import Alerta from './components/alerta/alerta';
 import Search from './components/search/search';
 import Saudacoes from './components/saudacoes/saudacoes';
 import Cartoes from './components/cartoes/cartoes';
+import UltimasCompras from './components/ultimasCompras/ultimasCompras';
 
 function App() {
   return (
@@ -60,22 +61,30 @@ function App() {
           <Shortcut number="" numberStyle="" text="" money=""/>
         </div>
         
-        <div className="painel">
-          <Cartoes 
-            title="Cartões"
-            limiteDisp="Limite Disponível"
-            limiteValor="R$ 3.000,00"
-            ultimaCompra="Última Compra"
-            localCompra="Bazar Mituzi"
-            valorCompra="R$ 300,00" 
-            limiteMesTitle="Limite mensal"
-            limiteMesValue="R$ 300,00"
-            limiteMesTotal="R$ 3000,00"
-            buttonText="MAIS DETALHES"
-          />
-        </div>
+        <section className="contentMid">
+          <div className="painelCartoes">
+            <Cartoes 
+              title="Cartões"
+              limiteDisp="Limite Disponível"
+              limiteValor="R$ 3.000,00"
+              ultimaCompra="Última Compra"
+              localCompra="Bazar Mituzi"
+              valorCompra="R$ 300,00" 
+              limiteMesTitle="Limite mensal"
+              limiteMesValue="R$ 300,00"
+              limiteMesTotal="R$ 3000,00"
+              buttonText="MAIS DETALHES"
+            />
+          </div>
+          <div className="painelCompras">
 
+            <UltimasCompras 
+              className="painelUltimasCompras"
+              title="Últimas Compras"
+            />
+          </div>
 
+          </section>
       </section>
         
     </main>

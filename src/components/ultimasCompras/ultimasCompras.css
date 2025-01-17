@@ -1,0 +1,9 @@
+.transactionMain{
+    display: flex;
+    justify-content: space-between;
+    border-width: 0 0 1px 0;
+    border-bottom-style: solid;
+    border-color: #00000025;
+
+
+}
