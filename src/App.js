@@ -8,10 +8,22 @@ import Search from './components/search/search';
 import Saudacoes from './components/saudacoes/saudacoes';
 import Cartoes from './components/cartoes/cartoes';
 import UltimasCompras from './components/ultimasCompras/ultimasCompras';
+import Login from './components/login/login';
+import { useLoginContext } from './contexts/loginContext';
+
+import { useContext } from 'react';
 
 function App() {
+//usando contexto
+  const {isLoged, userData} = useLoginContext()
+
   return (
+
     <main>
+
+  { !isLoged ? <Login /> : <>
+
+
       <sidebar className="sidebar">
         <div className="logoDiv">
           <Logo
@@ -49,7 +61,7 @@ function App() {
           </div>
 
           <div>
-            <Saudacoes name="Tide Cardoso"/>
+            <Saudacoes name={userData?.name ?? "Visitante"}/>
           </div>
           
         </header>
@@ -86,9 +98,16 @@ function App() {
 
           </section>
       </section>
+
+      </>
+
+  }   
         
     </main>
-  );
+
+);
+
+
 }
 
 export default App;
