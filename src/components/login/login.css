@@ -1,6 +1,75 @@
 .telaLogin{
     background-color: white;
-    
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+}
+
+.bg {
+    width: 100%;
+    height: 100%;
+    display: block; /* Importante para evitar espaços em branco */
+}
+
+.bg-wrapper { 
+    position: relative;
+    width: auto; 
+    height: 100vh;
+  }
+
+.bm img {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    z-index: 0;
+}
+.bg-wrapper::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #1BC6814D;
+    z-index: 0;
+  }
+
+
+.logo{
+    position: absolute;
+    top: 32px;
+    left: 32px;
+    z-index: 1;
+    width: 200px;
+    height: auto;
+}
+
+.blocoImg{
+    width: 300px;
+}
+
+.blocoForm{
+    background-color: white;
+    display: flex;
+    flex: 1;
+    padding: 20px;
+    box-sizing: border-box;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.loginBloco1, .loginBloco2, .loginBloco3 {
+    flex: 1;
+    width: 100%;
+}
+
+.loginForm{
+    display: flex;
 }
 
 .telaLogin form {
@@ -12,12 +81,9 @@
     height: 466px;
 }
 
-img {
-    color: #1BC6814D;
-    height: 100vh;
-}
 
 .loginBloco1{
+    align-items: start;
     margin-bottom: 42px;
 }
 
@@ -25,7 +91,12 @@ img {
     margin-top: 24px 0;
 }
 
+.loginBloco2{
+    color: #484848;
+}
+
 .telaLogin h1{
+    color: #484848;
     font-size: 48px;
     font-weight: 700;
     line-height: 57.6px;
@@ -46,7 +117,8 @@ img {
     text-align: left;
     text-underline-position: from-font;
     text-decoration-skip-ink: none;
-    
+    color: #484848;
+
 }
 
 #password, #User{
@@ -56,12 +128,19 @@ img {
     text-align: left;
     text-underline-position: from-font;
     text-decoration-skip-ink: none;
+    color: #484848;
 
 }
 
 .telaLogin label {
     display: flex;
     flex-direction: column;
+}
+
+.loginBloco2 #User, #password{
+    border: 2px solid #D9D9D9;
+    border-radius: 6px;
+    height: 46px;
 }
 
 .suporteLogin {
@@ -83,6 +162,7 @@ img {
     text-underline-position: from-font;
     text-decoration-skip-ink: none;
     margin-left: 4px;
+    color: #484848;
 
 }
 
@@ -102,14 +182,41 @@ img {
     background-color: #1BC681;
     width: fit-content;
     text-decoration: none;
-    padding: 8px 144.5px 8px 144.5px;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    padding: 8px 153.5px 8px 153.5px;
     margin: auto;
     border-radius: 6px;
-border: none;
+    border: none;
     font-size: 18px;
     font-weight: 600;
     line-height: 21.6px;
     text-align: center;
+}
 
+.loginBloco3{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.loginBloco3 h2 {
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 28.8px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: #484848;
+}
+
+.loginBloco3 span{
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 28.8px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: #1BC681;
 
 }
