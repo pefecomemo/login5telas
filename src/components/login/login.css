@@ -121,6 +121,10 @@
 
 }
 
+.loginBloco2 label {
+    gap: 4px;
+}
+
 #password, #User{
     font-size: 18px;
     font-weight: 400;
@@ -129,6 +133,8 @@
     text-underline-position: from-font;
     text-decoration-skip-ink: none;
     color: #484848;
+    margin-bottom: 16px;
+    
 
 }
 
@@ -151,6 +157,7 @@
 
 .suporteLoginLembrar{
     display: flex;
+    align-items: center;
 
 }
 
