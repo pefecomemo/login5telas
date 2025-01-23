@@ -2,12 +2,12 @@
     display: flex;
     flex-direction: column;
     width: 220px;
-    height: 198px;
+    height: auto;
     color: #ffffff;
     background-color: #1BC681;
     border-radius: 6px;
-    padding: 16px;
-    margin: auto;
+    padding: 16px 60px 16px 16px;
+    margin: auto 30px 24px 30px;
 
 }
 
@@ -18,6 +18,8 @@
     text-align: left;
     text-underline-position: from-font;
     text-decoration-skip-ink: none;
+    margin-bottom: 8px;
+
 }
 
 .helpContent {
@@ -27,11 +29,35 @@
     text-align: left;
     text-underline-position: from-font;
     text-decoration-skip-ink: none;
+    margin-bottom: 16px;
     
 }
 
 .helpButton{
+    margin-bottom:8px;
+    margin-top:8px;
+}
+
+.helpButton a {
+    text-decoration: none;
     color: #ffffff;
     background-color: #1BC681;
     margin-bottom: auto;
+    margin-top: 8px;
+    border: solid 2px white;
+    border-radius: 6px;
+
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 21.6px;
+    text-align: center;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    padding: 8px 24px;
+
+}
+
+.helpBox .helpButton a:active {  /* Seletor específico para o botão do HelpBox */
+    background-color: white;
+    color: #1BC681;
 }

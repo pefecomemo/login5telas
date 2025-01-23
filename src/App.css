@@ -5,10 +5,24 @@
   flex-direction: column;
 }
 
-.navigation{
-  display: flex;
-  flex-direction: column;
-  margin-left: 40px;
+
+
+.sideDiv1{
+  margin: 24px 0 auto 40px;
+  
+}
+
+.sideDiv1 .navGroup{
+  margin-bottom: auto;
+}
+
+.sideDiv1 .logoDiv {
+  margin-bottom: 60px;
+}
+
+
+.sideDiv2{
+  margin-top: auto;
 }
 
 .shortCuts {
@@ -21,6 +35,8 @@
    padding: 0 36px 36px;
    display: flex;
    flex-direction: column;
+   flex-grow: 1;
+   justify-content: center;
    align-items: center;
    background-color: #1BC681;
   }
@@ -35,7 +51,6 @@
   display: flex;
   /* background-color: white; */
 }
-
 
 .painelUltimasCompras {
   display: flex;

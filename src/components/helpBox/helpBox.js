@@ -1,11 +1,17 @@
 import "./helpBox.css"
 import Button from "../button/button";
 
-const HelpBox = ( {title, content}) => {
-    return <div classnName="">
-            <h5 className="helpTitle"> {title} </h5>
+const HelpBox = ( {titleLine1, titleLine2, content}) => {
+    return <div className="helpBox">
+            <h5 className="helpTitle">
+                {titleLine1}
+                <br/>
+                {titleLine2}
+                </h5>
             <h6 className="helpContent"> {content} </h6>
-            <Button text="CONTATAR"/>
+            <div className="helpButton">
+                <Button text="CONTATAR"/>
+            </div>
         </div>;
 }
 

@@ -25,28 +25,33 @@ function App() {
 
 
       <sidebar className="sidebar">
-        <div className="logoDiv">
-          <Logo
-          className="logoMeuBanco"
-          textoAlt="logotipo meubanco"
-          logoImagem="/assets/imgs/Property 1=Default.png"
-          pageLogo="#"
-          />
-        </div>  
+        <div className="sideDiv1">
+          <div className="logoDiv">
+            <Logo
+            className="logoMeuBanco"
+            textoAlt="logotipo meubanco"
+            logoImagem="/assets/imgs/Property 1=Default.png"
+            pageLogo="#"
+            />
+          </div>  
 
-        <nav className="navigation">
-          <Button buttonType="button-navigation button-navigation-active" iconType="painel" text="Painel"/>
-          <Button buttonType="button-navigation" iconType="carteira" text="Carteira"/>
-          <Button buttonType="button-navigation" iconType="transferencias" text="Transferências"/>
-          <Button buttonType="button-navigation" iconType="servico" text="Serviços"/>
-          <Button buttonType="button-navigation" iconType="configuracoes" text="Configurações"/>
-        </nav>
-
-        <div className="helpBox">
+          <nav className="navGroup">
+            <Button buttonType="button-navigation button-navigation-active" iconType="painel" text="Painel"/>
+            <Button buttonType="button-navigation" iconType="carteira" text="Carteira"/>
+            <Button buttonType="button-navigation" iconType="transferencias" text="Transferências"/>
+            <Button buttonType="button-navigation" iconType="servico" text="Serviços"/>
+            <Button buttonType="button-navigation" iconType="configuracoes" text="Configurações"/>
+          </nav>
+        </div>
+        <div className="sideDiv2">
+        <div className="">
           <HelpBox
-            title="Precisa de ajuda?"
+            titleLine1="Precisa"
+            titleLine2="de ajuda?"
             content="Fale com um dos nossos especialistas"
             buttonText ="CONTATAR" />
+        </div>
+
         </div>
       </sidebar>
 
