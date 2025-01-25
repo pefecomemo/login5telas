@@ -1,9 +1,97 @@
 .transactionMain{
     display: flex;
     justify-content: space-between;
+    flex-direction: column;
     border-width: 0 0 1px 0;
     border-bottom-style: solid;
     border-color: #00000025;
+}
 
+.painelCompras{
+    background-color: white;
+    width: 75%;
+    display: flex;
+    padding: 24px 24px 24px 42px;
+    border-radius: 8px;
+    gap: 57px;
+}
+
+.comprasDiv {
+    width: 100%;
+  }
+
+.comprasDiv h3 {
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 24px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: #484848;
+}
+
+.comprasDiv h5 {
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 16.8px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color:#1BC681;
+}
+
+.transactionMain h4 {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16.8px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: #484848;
+}
+
+.tipoPgto_Valor{
+    display: flex;
+    justify-content: space-between;;
+}
+
+.tipoDePagamento {
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 14.4px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: #B5B5B5;
+}
+
+.valorDaCompra {
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 16.8px;
+    text-align: center;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: #1BC681;
+}
+
+.comprasDiv a{
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    color: white;
+    background-color: #1BC681;
+    padding: 8px 24px;
+    gap: 10px;
+    margin: 40px auto 24PX auto;
+    width: 169px;
+    border-radius: 8px;
+    
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 21.6px;
+    text-align: center;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
 
 }

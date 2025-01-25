@@ -1,5 +1,8 @@
 import "./ultimasCompras.css"
 import Button from "../button/button.js"
+import { format } from "date-fns";
+import { ptBR } from "date-fns/locale";
+
 
 const UltimasCompras = ( {title, text} ) => {
     
@@ -60,15 +63,19 @@ const UltimasCompras = ( {title, text} ) => {
 
      
       const shoppingDataReturn = shoppingData.map(data => {
+        const date = new Date(data.dateTime);
+        const formattedDate = format(date, "dd/MMM", { locale: ptBR });
+        
+
         const transactionsReturn = data.transactions.map(transaction => {
           return <div className="transactionMain">
                     <div>
                     <br />
-                        <h5><b>{transaction.local}</b></h5>
-                        <h5>{transaction.paymentType}</h5>
+                        <h4><b>{transaction.local}</b></h4>
                     </div>
-                    <div>
-                        <p>R$ {transaction.value}</p>
+                    <div className="tipoPgto_Valor">
+                        <span className="tipoDePagamento">{transaction.paymentType} </span>
+                        <span className="valorDaCompra">R$ {transaction.value}</span>
                     </div>
                 </div>
         });
@@ -76,16 +83,16 @@ const UltimasCompras = ( {title, text} ) => {
 
                     <br />
 
-                    <h5><b>{data.dateTime}</b></h5>
-                    {transactionsReturn}
+                    <h5><b>{formattedDate}</b></h5>
+                    <div className="diaDaCompra">{transactionsReturn}</div>
                 </div>
       });
     
 
-    return  <div>
-        <h4>{title}</h4>
+    return  <div className="comprasDiv">
+        <h3>{title}</h3>
         {shoppingDataReturn}
-        <Button text="VER EXTRATO" />
+        <Button className="btnExtrato" text="VER EXTRATO" />
         </div>
     
 }

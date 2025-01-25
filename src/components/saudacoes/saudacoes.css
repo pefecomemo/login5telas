@@ -1,0 +1,28 @@
+header {
+    margin: 24px 0;;
+
+}
+
+.icon_text_name{
+    display: flex;
+}
+
+.icon_text_name h5 {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19.2px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: white;
+}
+
+.icon_text_name h5>b {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 19.2px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: white;
+}

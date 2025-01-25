@@ -6,7 +6,7 @@ let iconSvg = <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns=
 
 
 const Saudacoes = ({name}) => {
-    return <div classsName="icon_text_name">
+    return <div className="icon_text_name">
         {iconSvg}
         <h5> Bem vindo, <b> {name} </b></h5> 
     </div>

@@ -61,6 +61,7 @@ function App() {
             <Search/>
           </div>
           
+         <div className="contentHeaderRight">
           <div>
             <Alerta/>
           </div>
@@ -68,6 +69,7 @@ function App() {
           <div>
             <Saudacoes name={userData?.name ?? "Visitante"}/>
           </div>
+         </div>
           
         </header>
         <div className='shortCuts'>
